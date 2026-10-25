@@ -1,0 +1,53 @@
+{
+  "name": "pi-like-claude",
+  "version": "0.1.0",
+  "description": "Make pi's footer and shortcuts behave like Claude Code: HUD statusline, Shift+Tab plan mode.",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "statusline",
+    "footer",
+    "hud",
+    "plan-mode",
+    "claude-code"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lishiyu996/pi-like-claude.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lishiyu996/pi-like-claude/issues"
+  },
+  "homepage": "https://github.com/lishiyu996/pi-like-claude#readme",
+  "files": [
+    "extensions",
+    "docs",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions/custom-footer.ts",
+      "./extensions/plan-mode.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-ai": "1.1.0",
+    "@earendil-works/pi-coding-agent": "1.1.0",
+    "@earendil-works/pi-tui": "1.1.0",
+    "@types/node": "24.12.4",
+    "typescript": "5.9.3"
+  },
+  "packageManager": "pnpm@11.9.0"
+}
